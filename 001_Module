@@ -72,5 +72,160 @@ namespace CalculatorApp {
 }  
 
 
+2. Average for 5 Students
+using System;
+using System.IO;
+public class Exercise9
+{
+  public static void Main()
+  {
+     double mark1,mark2,mark3,mark4,mark4;
+      
+     Console.Write("Enter the First mark: ");
+     mark1 = Convert.ToDouble(Console.ReadLine());
+ 
+     Console.Write("Enter the Second mark: ");
+     mark2 = Convert.ToDouble(Console.ReadLine());
+ 
+     Console.Write("Enter the third mark: ");
+     mark3 = Convert.ToDouble(Console.ReadLine());
+ 
+     Console.Write("Enter the fourth mark: ");
+     mark4 = Convert.ToDouble(Console.ReadLine());
+	
+     Console.Write("Enter the fourth mark: ");
+     mark5 = Convert.ToDouble(Console.ReadLine());
+ 
+     double result = (mark1 + mark2 + mark3 + mark4 +mark5) / 5;
+     Console.WriteLine("The average of {0}, {1}, {2}, {3},{4} is: {5} ",
+  mark1, mark2, mark3, mark4,mark5 result);
+   }
+}
+
+
+3. Display the highest Mark
+using System;
+using System.IO;
+public class Exercise9
+{
+  public static void Main()
+  {
+     double mark1,mark2,mark3,mark4,mark4;
+      
+     Console.Write("Enter the First mark: ");
+     mark1 = Convert.ToDouble(Console.ReadLine());
+ 
+     Console.Write("Enter the Second mark: ");
+     mark2 = Convert.ToDouble(Console.ReadLine());
+ 
+     Console.Write("Enter the third mark: ");
+     mark3 = Convert.ToDouble(Console.ReadLine());
+ 
+     Console.Write("Enter the fourth mark: ");
+     mark4 = Convert.ToDouble(Console.ReadLine());
+	
+     Console.Write("Enter the fourth mark: ");
+     mark5 = Convert.ToDouble(Console.ReadLine());
+ 
+     double result = (mark1 + mark2 + mark3 + mark4 +mark5) / 5;
+     Console.WriteLine("Maximum MArks = "+Math.Max(mark1 , mark2  , mark3 , mark4 , mark5));
+   }
+}
+
+4.  Write a static method to accept param array of integers. The method should find the sum of all the integers passed and display the result. Write a client program to call the method. The method should find the sum of all the integers passed and display the result.
+Code:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+static void MyMethod()
+    {
+     
+        int[] array1 = { 1, 1, 2 };
+       
+        int sum1 = array1.Sum();
+       
+       
+        Console.WriteLine("SUM: {0}", sum1);
+    }
+
+    static void Main()
+    {
+     	MyMethod();
+        
+    }
+}
+
+5. Swap two integer 
+using System;  
+  public class SwapExample  
+   {  
+     static void ram()  
+      {  
+       int  a=5,b=10;            
+       Console.WriteLine("Before swap a= "+a+" b= "+b);    
+       a=a+b; 
+       b=a-b; 
+       a=a-b; 
+       Console.Write("After swap a= "+a+" b= "+b);       
+      }  
+      public static void Main(string[] args)  
+      {  
+       ram();       
+      } 
+  }  
+
+6.Write a single method that calculates the area and circumference of the circle. The area and circumference should be displayed through the client code
+Code:
+using System;  
+  public class SwapExample  
+   {  
+     static void aoc()  
+      {  
+        Console.Write("Enter Radius: ");
+        double Radious = Convert.ToDouble(Console.ReadLine());
+        double Area = Math.PI * Radious * Radious;
+        Console.WriteLine("Area of circle: " + Area);
+        Console.ReadKey();       
+      }  
+      public static void Main(string[] args)  
+      {  
+       aoc();       
+      } 
+  }  
+
+7. Create a structure Book which contains the following members:
+bookId, title, price, bookType
+using System;
+
+struct Books {
+   public int bookId;
+   public string title;
+   public int  price;
+   public int book_type;
+};  
+
+public class testStructure {
+   public static void Main(string[] args) {
+      Books Book1;   
+     
+      Book1.bookId = 1;
+      Book1.title = "C Programming"; 
+      Book1.price = 200;
+      Book1.book_type = "Program";
+
+  
+      Console.WriteLine( "Book 1 title : {0}", Book1.bookId);
+      Console.WriteLine("Book 1 author : {0}", Book1.title);
+      Console.WriteLine("Book 1 subject : {0}", Book1.price);
+      Console.WriteLine("Book 1 book_id :{0}", Book1.book_type);
+    
+
+      Console.ReadKey();
+   }
+}
+
 
 
