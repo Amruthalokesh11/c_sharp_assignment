@@ -132,7 +132,10 @@ public class Exercise9
    }
 }
 
-4.  Write a static method to accept param array of integers. The method should find the sum of all the integers passed and display the result. Write a client program to call the method. The method should find the sum of all the integers passed and display the result.
+4.  Write a static method to accept param array of integers. The method should find the sum of all the integers 
+passed and display the result. Write a client program to call the method. The method should find the sum of all the integers passed and 
+display the result.
+
 Code:
 using System;
 using System.Collections.Generic;
